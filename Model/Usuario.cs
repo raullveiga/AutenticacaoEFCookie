@@ -24,6 +24,6 @@ namespace AutenticacaoEFCookie.Model
         public string Senha { get; set; }
 
         [Required]
-        public ICollection<Permissao> Permissao { get; set; }
+        public ICollection<UsuarioPermissao> UsuarioPermissao { get; set; }
     }
 }

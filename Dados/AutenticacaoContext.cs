@@ -14,9 +14,9 @@ namespace AutenticacaoEFCookie.Dados
         public DbSet<UsuarioPermissao> UsuarioPermissoes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
-            modelBuilder.Entity<Usuario>().ToTable("Usuarios");
-            modelBuilder.Entity<Usuario>().ToTable("Permissoes");
-            modelBuilder.Entity<Usuario>().ToTable("UsuarioPermissoes");
+            modelBuilder.Entity<Usuario>().ToTable("Usuario");
+            modelBuilder.Entity<Permissao>().ToTable("Permisssao");
+            modelBuilder.Entity<UsuarioPermissao>().ToTable("UsuarioPermissao");
 
             base.OnModelCreating(modelBuilder);
         }
